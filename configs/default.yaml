@@ -1,0 +1,27 @@
+data:
+  num_users: 5000
+  num_items: 500
+  num_categories: 15
+  num_interactions: 120000
+  test_ratio: 0.15
+  val_ratio: 0.10
+  random_seed: 42
+  data_dir: "data"
+
+model:
+  embedding_dim: 64
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  num_negatives: 4
+  batch_size: 512
+  num_epochs: 15
+  dropout: 0.1
+  top_k: 10
+
+ab_test:
+  num_simulation_users: 10000
+  traffic_split: 0.5
+  base_acceptance_rate: 0.08
+  treatment_lift_factor: 1.35
+  price_sensitivity_decay: 0.02
+  random_seed: 42
