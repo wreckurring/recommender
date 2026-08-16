@@ -40,7 +40,7 @@ venv.bak/
 *.swo
 
 # Data and model artifacts
-data/
+/data/
 checkpoints/
 artifacts/
 *.pt
